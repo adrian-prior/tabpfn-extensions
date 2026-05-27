@@ -3,7 +3,7 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "tabpfn-extensions"
+name = "tabpfn-extensions-releasetest-adrian-prior"
 version = "0.4.1"
 dependencies = [
     "torch>=2.1",
@@ -82,7 +82,7 @@ unsupervised = []
 # Meta-package that installs all extensions
 all = [
     # scikit-survival not included; install manually if you need SurvivalTabPFN.
-    "tabpfn-extensions[interpretability,post_hoc_ensembles,hpo,survival]",
+    "tabpfn-extensions-releasetest-adrian-prior[interpretability,post_hoc_ensembles,hpo,survival]",
 ]
 
 [dependency-groups]

@@ -131,7 +131,7 @@ jobs:
         env:
           VERSION: ${{ needs.build.outputs.version }}
         run: |
-          echo "🧪 Testing installation of tabpfn-extensions==${VERSION} from TestPyPI..."
+          echo "🧪 Testing installation of tabpfn-extensions-releasetest-adrian-prior==${VERSION} from TestPyPI..."
 
           TEST_DIR=$(mktemp -d)
           cd "$TEST_DIR"
@@ -143,7 +143,7 @@ jobs:
             --index-url https://test.pypi.org/simple/ \
             --extra-index-url https://pypi.org/simple/ \
             --index-strategy unsafe-best-match \
-            tabpfn-extensions==${VERSION}
+            tabpfn-extensions-releasetest-adrian-prior==${VERSION}
 
           python - <<PY
           import tabpfn_extensions
